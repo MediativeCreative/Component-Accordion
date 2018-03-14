@@ -1,6 +1,8 @@
 # Component-Accordion
 
 This is an accordion!
+
+Simply place all your content in the <dd> tags and your titles in the <dt> tags.
 You can view it [here](https://mediativecreative.github.io/Component-Accordion/)
 
 CSS:
