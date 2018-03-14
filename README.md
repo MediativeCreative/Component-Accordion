@@ -2,7 +2,7 @@
 
 This is an accordion!
 
-Simply place all your content in the <dd> tags and your titles in the <dt> tags.
+Simply place all your content in the dd tags and your titles in the dt tags of the HTML.
 You can view it [here](https://mediativecreative.github.io/Component-Accordion/)
 
 CSS:
