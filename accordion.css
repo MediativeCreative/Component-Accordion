@@ -1,10 +1,10 @@
 
-.accordion dl,
-.accordion-list {
+.mdaccordion dl,
+.mdaccordion-list {
   border: 1px solid #ddd;
 }
-.accordion dl:after,
-.accordion-list:after {
+.mdaccordion dl:after,
+.mdaccordion-list:after {
   content: "";
   display: block;
   height: 1em;
@@ -12,30 +12,30 @@
   background-color: #5f7279;
 }
 
-.accordion dd,
-.accordion__panel {
+.mdaccordion dd,
+.mdaccordion__panel {
   background-color: #fff;
   font-size: 1em;
   line-height: 1.5em;
 }
 
-.accordion p {
+.mdaccordion p {
   padding: 1em 2em 1em 2em;
 }
 
-.accordion {
+.mdaccordion {
   position: relative;
   background-color: #fff;
 }
 
-.container {
+.mdaccordion_container {
   max-width: 100%;
   margin: 0 auto;
   padding: 2em 0 2em 0;
 }
 
-.accordionTitle,
-.accordion__Heading {
+.mdaccordionTitle,
+.mdaccordion__Heading {
   background-color: #f6f6f6;
   text-align: center;
   font-weight: bold;
@@ -47,8 +47,8 @@
   transition: background-color 0.5s, color 0.5s ease-in-out;
   border-bottom: 1px solid #5f7279;
 }
-.accordionTitle:before,
-.accordion__Heading:before {
+.mdaccordionTitle:before,
+.mdaccordion__Heading:before {
   content: "+";
   font-size: 1.5em;
   line-height: 1em;
@@ -59,60 +59,60 @@
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-.accordionTitle:focus,
-.accordion__Heading:focus {
+.mdaccordionTitle:focus,
+.mdaccordion__Heading:focus {
   text-decoration: none !important;
   font-weight: bold !important;
   outline:0;
   color:initial;
   }
 
-.accordionTitle:hover,
-.accordion__Heading:hover {
+.mdaccordionTitle:hover,
+.mdaccordion__Heading:hover {
   background-color: #1267a4;
   color: #fff;
   text-decoration: none !important;
   font-weight: bold !important;
 }
 
-.accordionTitleActive,
-.accordionTitle.is-expanded {
+.mdaccordionTitleActive,
+.mdaccordionTitle.md-is-expanded {
   background-color: #1267a4;
   color: #fff;
 }
-.accordionTitleActive:before,
-.accordionTitle.is-expanded:before {
+.mdaccordionTitleActive:before,
+.mdaccordionTitle.md-is-expanded:before {
   -webkit-transform: rotate(-225deg);
           transform: rotate(-225deg);
 }
 
-.accordionItem {
+.mdaccordionItem {
   height: auto;
   overflow: hidden;
   -webkit-transition: height 1s;
   transition: max-height 1s;
 }
 @media screen and (min-width: 48em) {
-  .accordionItem {
+  .mdaccordionItem {
     -webkit-transition: max-height 0.5s;
     transition: max-height 0.5s;
   }
 }
 
-.accordionItem.is-collapsed {
+.mdaccordionItem.md-is-collapsed {
   max-height: 0 !important;
 }
 
-.no-js .accordionItem.is-collapsed {
+.no-js .mdaccordionItem.md-is-collapsed {
   max-height: auto;
 }
 
-.animateIn {
+.md-animateIn {
   -webkit-animation: accordionIn 0.45s normal ease-in-out both 1;
           animation: accordionIn 0.45s normal ease-in-out both 1;
 }
 
-.animateOut {
+.md-animateOut {
   -webkit-animation: accordionOut 0.45s alternate ease-in-out both 1;
           animation: accordionOut 0.45s alternate ease-in-out both 1;
 }

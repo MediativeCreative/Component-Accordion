@@ -1,6 +1,6 @@
 (function(){
 	var d = document,
-	accordionToggles = d.querySelectorAll('.js-accordionTrigger'),
+	accordionToggles = d.querySelectorAll('.js-mdaccordionTrigger'),
 	setAria,
 	setAccordionAria,
 	switchAccordion,
@@ -33,7 +33,7 @@
 
 window.onload = function() {
 
-	var mdElements = document.getElementsByClassName("accordionItem");
+	var mdElements = document.getElementsByClassName("mdaccordionItem");
 
 	for (var i = 0, max = mdElements.length; i < max; i++) {
 	    mdElements[i].style.maxHeight = mdElements[i].scrollHeight + "px";
@@ -46,18 +46,18 @@ switchAccordion = function(e) {
 	e.preventDefault();
 	var thisAnswer = e.target.parentNode.nextElementSibling;
 	var thisQuestion = e.target;
-	if(thisAnswer.classList.contains('is-collapsed')) {
+	if(thisAnswer.classList.contains('md-is-collapsed')) {
 		setAccordionAria(thisQuestion, thisAnswer, 'true');
 	} else {
 		setAccordionAria(thisQuestion, thisAnswer, 'false');
 	}
-  	thisQuestion.classList.toggle('is-collapsed');
-  	thisQuestion.classList.toggle('is-expanded');
-		thisAnswer.classList.toggle('is-collapsed');
-		thisAnswer.classList.toggle('is-expanded');
+  	thisQuestion.classList.toggle('md-is-collapsed');
+  	thisQuestion.classList.toggle('md-is-expanded');
+		thisAnswer.classList.toggle('md-is-collapsed');
+		thisAnswer.classList.toggle('md-is-expanded');
 		thisAnswer.style.maxHeight = "0" ? thisAnswer.style.maxHeight = (thisAnswer.scrollHeight + "px") : thisAnswer.style.maxHeight = "0";
  	
-  	thisAnswer.classList.toggle('animateIn');
+  	thisAnswer.classList.toggle('md-animateIn');
 	};
 	for (var i=0,len=accordionToggles.length; i<len; i++) {
 		if(touchSupported) {
